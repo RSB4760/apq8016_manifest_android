@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/AdvantechRISC/" name="advantech-github"/>
+  <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_device_common" path="device/common" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_arm64" path="device/generic/arm64" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_armv7-a-neon" path="device/generic/armv7-a-neon" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_common" path="device/generic/common" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_goldfish" path="device/generic/goldfish" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_mini-emulator-arm64" path="device/generic/mini-emulator-arm64" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_mini-emulator-armv7-a-neon" path="device/generic/mini-emulator-armv7-a-neon" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_mini-emulator-mips" path="device/generic/mini-emulator-mips" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_mini-emulator-x86" path="device/generic/mini-emulator-x86" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_mips" path="device/generic/mips" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_device_generic_qemu" path="device/generic/qemu" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_x86" path="device/generic/x86" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_x86_64" path="device/generic/x86_64" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="device" name="apq8016_device_google_accessory_arduino" path="device/google/accessory/arduino" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_google_accessory_demokit" path="device/google/accessory/demokit" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="device,fugu,pdk-fs" name="apq8016_device_google_atv" path="device/google/atv" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="device,hammerhead,pdk-fs" name="apq8016_device_lge_hammerhead" path="device/lge/hammerhead" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="device,hammerhead,pdk-fs" name="apq8016_device_lge_hammerhead-kernel" path="device/lge/hammerhead-kernel" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_device_qcom_common" path="device/qcom/common" upstream="LA.BR.1.2.7-01010-8x16_advan">
+    <copyfile dest="build.sh" src="build.sh"/>
+    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <project remote="advantech-github" name="apq8016_device_qcom_sepolicy" path="device/qcom/sepolicy" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_device_sample" path="device/sample" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_kernel_lk" path="bootable/bootloader/lk" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_kernel" path="kernel" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_abi_cpp" path="abi/cpp" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_art" path="art" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_bionic" path="bionic" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_bootable_recovery" path="bootable/recovery"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_build" path="build"  upstream="LA.BR.1.2.7-01010-8x16_advan">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+  <project remote="advantech-github" groups="cts,pdk-cw-fs" name="apq8016_cts" path="cts"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_dalvik" path="dalvik"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_developers_build" path="developers/build"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_developers_demos" path="developers/demos"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_developers_docs" path="developers/docs"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_developers_samples_android" path="developers/samples/android"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_development" path="development"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_docs_source.android.com" path="docs/source.android.com"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_aac" path="external/aac"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_android-clat" path="external/android-clat"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_android-mock" path="external/android-mock"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_androidplot" path="external/androidplot"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_ant-glob" path="external/ant-glob"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_antlr" path="external/antlr"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_apache-commons-math" path="external/apache-commons-math"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_apache-harmony" path="external/apache-harmony"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_apache-http" path="external/apache-http"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_apache-xml" path="external/apache-xml"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_bison" path="external/bison"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_blktrace" path="external/blktrace"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_boringssl" path="external/boringssl"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_bouncycastle" path="external/bouncycastle"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_brctl" path="external/brctl"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_bsdiff" path="external/bsdiff"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_bzip2" path="external/bzip2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_cblas" path="external/cblas"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_ceres-solver" path="external/ceres-solver"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_chromium-libpac" path="external/chromium-libpac"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_chromium-trace" path="external/chromium-trace"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_chromium-webview" path="external/chromium-webview"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_clang" path="external/clang"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_cmockery" path="external/cmockery"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_compiler-rt" path="external/compiler-rt"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_conscrypt" path="external/conscrypt"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_crcalc" path="external/crcalc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_curl" path="external/curl"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_deqp" path="external/deqp"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_dexmaker" path="external/dexmaker"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_dhcpcd" path="external/dhcpcd"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_dnsmasq" path="external/dnsmasq"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_doclava" path="external/doclava"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_donuts" path="external/donuts"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="drm_gralloc" name="apq8016_external_drm_gralloc" path="external/drm_gralloc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="drm_hwcomposer" name="apq8016_external_drm_hwcomposer" path="external/drm_hwcomposer"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_droiddriver" path="external/droiddriver"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_e2fsprogs" path="external/e2fsprogs"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_easymock" path="external/easymock"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_ebtables" path="external/ebtables"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_eclipse-basebuilder" path="external/eclipse-basebuilder"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_eclipse-windowbuilder" path="external/eclipse-windowbuilder"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_eigen" path="external/eigen"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_elfutils" path="external/elfutils"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_embunit" path="external/embunit"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_emma" path="external/emma"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_esd" path="external/esd"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_expat" path="external/expat"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_eyes-free" path="external/eyes-free"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_f2fs-tools" path="external/f2fs-tools"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_fdlibm" path="external/fdlibm"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_fio" path="external/fio"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_flac" path="external/flac"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_fonttools" path="external/fonttools"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_freetype" path="external/freetype"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_fsck_msdos" path="external/fsck_msdos"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,qcom_msm8x26" name="apq8016_external_giflib" path="external/giflib"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_glide" path="external/glide"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="dragon" name="apq8016_external_google-breakpad" path="external/google-breakpad"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_google-fonts_carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_google-fonts_coming-soon" path="external/google-fonts/coming-soon"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_google-fonts_dancing-script" path="external/google-fonts/dancing-script"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_google-tv-pairing-protocol" path="external/google-tv-pairing-protocol"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_gptfdisk" path="external/gptfdisk"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_gtest" path="external/gtest"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_guava" path="external/guava"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_hamcrest" path="external/hamcrest"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs,qcom_msm8x26" name="apq8016_external_harfbuzz_ng" path="external/harfbuzz_ng"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_hyphenation-patterns" path="external/hyphenation-patterns"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_icu" path="external/icu"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_iproute2" path="external/iproute2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_ipsec-tools" path="external/ipsec-tools"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_iptables" path="external/iptables"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_iputils" path="external/iputils"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_jack" path="external/jack"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_jarjar" path="external/jarjar"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_javasqlite" path="external/javasqlite"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_javassist" path="external/javassist"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_jdiff" path="external/jdiff"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_jemalloc" path="external/jemalloc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_jetty" path="external/jetty"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_jhead" path="external/jhead"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_jmdns" path="external/jmdns"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_jmonkeyengine" path="external/jmonkeyengine"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_jpeg" path="external/jpeg"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_jsilver" path="external/jsilver"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_jsmn" path="external/jsmn"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_jsoncpp" path="external/jsoncpp"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_jsr305" path="external/jsr305"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_junit" path="external/junit"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_kernel-headers" path="external/kernel-headers"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_ksoap2" path="external/ksoap2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libavc" path="external/libavc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libcap-ng" path="external/libcap-ng"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libcxx" path="external/libcxx"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libcxxabi" path="external/libcxxabi"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libdrm" path="external/libdrm"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_libedit" path="external/libedit"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libexif" path="external/libexif"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libgsm" path="external/libgsm"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_libhevc" path="external/libhevc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_liblzf" path="external/liblzf"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libmpeg2" path="external/libmpeg2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libmtp" path="external/libmtp"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libnfc-nci" path="external/libnfc-nci"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libnfc-nxp" path="external/libnfc-nxp"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libnl" path="external/libnl"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libogg" path="external/libogg"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libopus" path="external/libopus"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,pdk-cw-fs" name="apq8016_external_libpcap" path="external/libpcap"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libphonenumber" path="external/libphonenumber"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libpng" path="external/libpng"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libseccomp-helper" path="external/libseccomp-helper"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libselinux" path="external/libselinux"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libssh2" path="external/libssh2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libunwind" path="external/libunwind"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libusb" path="external/libusb"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libusb-compat" path="external/libusb-compat"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libutf" path="external/libutf"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libvncserver" path="external/libvncserver"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libvorbis" path="external/libvorbis"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_libvpx" path="external/libvpx"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libvterm" path="external/libvterm"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_libxml2" path="external/libxml2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="libyuv,pdk-cw-fs" name="apq8016_external_libyuv" path="external/libyuv"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_linux-tools-perf" path="external/linux-tools-perf"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_littlemock" path="external/littlemock"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_lld" path="external/lld"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_lldb" path="external/lldb"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_llvm" path="external/llvm"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_ltrace" path="external/ltrace"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_lz4" path="external/lz4"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_lzma" path="external/lzma"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_marisa-trie" path="external/marisa-trie"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_markdown" path="external/markdown"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_mdnsresponder" path="external/mdnsresponder"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mesa3d" path="external/mesa3d"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_messageformat" path="external/messageformat"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_mksh" path="external/mksh"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_mm-dash" path="external/mm-dash"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mobicore" path="external/mobicore"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_mockftpserver" path="external/mockftpserver"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mockito" path="external/mockito"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mockwebserver" path="external/mockwebserver"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mp4parser" path="external/mp4parser"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mtpd" path="external/mtpd"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_nanohttpd" path="external/nanohttpd"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_nanopb-c" path="external/nanopb-c"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_naver-fonts" path="external/naver-fonts"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_netcat" path="external/netcat"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_netperf" path="external/netperf"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_neven" path="external/neven"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_nfacct" path="external/nfacct"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_nist-pkits" path="external/nist-pkits"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_nist-sip" path="external/nist-sip"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_noto-fonts" path="external/noto-fonts"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_oauth" path="external/oauth"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_objenesis" path="external/objenesis"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_okhttp" path="external/okhttp"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_opencv" path="external/opencv"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_openfst" path="external/openfst"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_openssh" path="external/openssh"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_owasp_sanitizer" path="external/owasp/sanitizer"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_parameter-framework" path="external/parameter-framework"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_pcre" path="external/pcre"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_pdfium" path="external/pdfium"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_ppp" path="external/ppp"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-java" name="apq8016_external_proguard" path="external/proguard"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_protobuf" path="external/protobuf"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_regex-re2" path="external/regex-re2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_replicaisland" path="external/replicaisland"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_robolectric" path="external/robolectric"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_roboto-fonts" path="external/roboto-fonts"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_safe-iop" path="external/safe-iop"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_scrypt" path="external/scrypt"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_selinux" path="external/selinux"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_sepolicy" path="external/sepolicy"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,qcom_msm8x26" name="apq8016_external_sfntly" path="external/sfntly"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,qcom_msm8x26" name="apq8016_external_skia" path="external/skia"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_slf4j" path="external/slf4j"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_smali" path="external/smali"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_sonic" path="external/sonic"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_sonivox" path="external/sonivox"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_speex" path="external/speex"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_sqlite" path="external/sqlite"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_squashfs-tools" path="external/squashfs-tools"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_srtp" path="external/srtp"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_strace" path="external/strace"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_svox" path="external/svox"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_tagsoup" path="external/tagsoup"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,pdk-cw-fs" name="apq8016_external_tcpdump" path="external/tcpdump"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_timezonepicker-support" path="external/timezonepicker-support"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_tinyalsa" path="external/tinyalsa"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_tinycompress" path="external/tinycompress"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_tinyxml" path="external/tinyxml"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_tinyxml2" path="external/tinyxml2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_toybox" path="external/toybox"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_tremolo" path="external/tremolo"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_v8" path="external/v8"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_valgrind" path="external/valgrind"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="vboot" name="apq8016_external_vboot_reference" path="external/vboot_reference"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_vixl" path="external/vixl"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_vogar" path="external/vogar"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,qcom_msm8x26" name="apq8016_external_webp" path="external/webp"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_webrtc" path="external/webrtc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_wpa_supplicant_8" path="external/wpa_supplicant_8"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_xmlwriter" path="external/xmlwriter"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_xmp_toolkit" path="external/xmp_toolkit"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_external_zlib" path="external/zlib"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_zopfli" path="external/zopfli"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_zxing" path="external/zxing"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_frameworks_av" path="frameworks/av"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_base" path="frameworks/base"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_frameworks_compile_libbcc" path="frameworks/compile/libbcc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_frameworks_compile_mclinker" path="frameworks/compile/mclinker"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_frameworks_compile_slang" path="frameworks/compile/slang"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs,pdk-fs" name="apq8016_frameworks_data-binding" path="frameworks/data-binding"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_ex" path="frameworks/ex"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_mff" path="frameworks/mff"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_minikin" path="frameworks/minikin"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_ml" path="frameworks/ml"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_multidex" path="frameworks/multidex"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_frameworks_native" path="frameworks/native"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_frameworks_opt_bitmap" path="frameworks/opt/bitmap"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_bluetooth" path="frameworks/opt/bluetooth"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_calendar" path="frameworks/opt/calendar"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_carddav" path="frameworks/opt/carddav"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_chips" path="frameworks/opt/chips"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_colorpicker" path="frameworks/opt/colorpicker"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_datetimepicker" path="frameworks/opt/datetimepicker"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_emoji" path="frameworks/opt/emoji"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_frameworks_opt_inputconnectioncommon" path="frameworks/opt/inputconnectioncommon"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_inputmethodcommon" path="frameworks/opt/inputmethodcommon"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="frameworks_ims,pdk-cw-fs" name="apq8016_frameworks_opt_net_ims" path="frameworks/opt/net/ims"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_net_voip" path="frameworks/opt/net/voip"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_photoviewer" path="frameworks/opt/photoviewer"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_setupwizard" path="frameworks/opt/setupwizard"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_frameworks_opt_telephony" path="frameworks/opt/telephony"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_timezonepicker" path="frameworks/opt/timezonepicker"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_vcard" path="frameworks/opt/vcard"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_opt_widget" path="frameworks/opt/widget"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_frameworks_rs" path="frameworks/rs"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_support" path="frameworks/support"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_volley" path="frameworks/volley"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_webview" path="frameworks/webview"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_frameworks_wilhelm" path="frameworks/wilhelm"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_hardware_broadcom_libbt" path="hardware/broadcom/libbt"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_hardware_libhardware" path="hardware/libhardware"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_hardware_libhardware_legacy" path="hardware/libhardware_legacy"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom,default" name="apq8016_hardware_qcom_audio" path="hardware/qcom/audio"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom" name="apq8016_hardware_qcom_bt" path="hardware/qcom/bt"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom,default" name="apq8016_hardware_qcom_camera" path="hardware/qcom/camera"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom,qcom_display" name="apq8016_hardware_qcom_display" path="hardware/qcom/display"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom,qcom_gps" name="apq8016_hardware_qcom_gps" path="hardware/qcom/gps"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom" name="apq8016_hardware_qcom_keymaster" path="hardware/qcom/keymaster"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom,default" name="apq8016_hardware_qcom_media" path="hardware/qcom/media"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom,default" name="apq8016_hardware_qcom_sensors" path="hardware/qcom/sensors"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom_wlan" name="apq8016_hardware_qcom_wlan" path="hardware/qcom/wlan"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_hardware_ril" path="hardware/ril"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_libcore" path="libcore"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_libnativehelper" path="libnativehelper"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_ndk" path="ndk"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_packages_apps_Bluetooth" path="packages/apps/Bluetooth"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_CMFileManager" path="packages/apps/CMFileManager"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Calculator" path="packages/apps/Calculator"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Calendar" path="packages/apps/Calendar"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Camera" path="packages/apps/Camera"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Camera2" path="packages/apps/Camera2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_packages_apps_CertInstaller" path="packages/apps/CertInstaller"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Contacts" path="packages/apps/Contacts"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_DeskClock" path="packages/apps/DeskClock"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Dialer" path="packages/apps/Dialer"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Email" path="packages/apps/Email"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Exchange" path="packages/apps/Exchange"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_FMRadio" path="packages/apps/FMRadio"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Gallery" path="packages/apps/Gallery"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Gallery2" path="packages/apps/Gallery2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_HTMLViewer" path="packages/apps/HTMLViewer"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_InCallUI" path="packages/apps/InCallUI"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_KeyChain" path="packages/apps/KeyChain"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Launcher2" path="packages/apps/Launcher2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Launcher3" path="packages/apps/Launcher3"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_LegacyCamera" path="packages/apps/LegacyCamera"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_ManagedProvisioning" path="packages/apps/ManagedProvisioning"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Messaging" path="packages/apps/Messaging"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Mms" path="packages/apps/Mms"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Music" path="packages/apps/Music"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_MusicFX" path="packages/apps/MusicFX"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Nfc" path="packages/apps/Nfc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_OneTimeInitializer" path="packages/apps/OneTimeInitializer"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Phone" path="packages/apps/Phone"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Protips" path="packages/apps/Protips"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Provision" path="packages/apps/Provision"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_QuickSearchBox" path="packages/apps/QuickSearchBox"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Settings" path="packages/apps/Settings"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_SmartCardService" path="packages/apps/SmartCardService"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_SpareParts" path="packages/apps/SpareParts"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_SpeechRecorder" path="packages/apps/SpeechRecorder"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Stk" path="packages/apps/Stk"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Tag" path="packages/apps/Tag"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Terminal" path="packages/apps/Terminal"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Trebuchet" path="packages/apps/Trebuchet"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_TvSettings" path="packages/apps/TvSettings"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_UnifiedEmail" path="packages/apps/UnifiedEmail"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_experimental" path="packages/experimental"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_inputmethods_OpenWnn" path="packages/inputmethods/OpenWnn"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_providers_ApplicationsProvider" path="packages/providers/ApplicationsProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_providers_BookmarkProvider" path="packages/providers/BookmarkProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_packages_providers_CalendarProvider" path="packages/providers/CalendarProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_providers_CallLogProvider" path="packages/providers/CallLogProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_packages_providers_MediaProvider" path="packages/providers/MediaProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_providers_PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_providers_TvProvider" path="packages/providers/TvProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_packages_providers_UserDictionaryProvider" path="packages/providers/UserDictionaryProvider"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_screensavers_Basic" path="packages/screensavers/Basic"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_screensavers_PhotoTable" path="packages/screensavers/PhotoTable"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_screensavers_WebView" path="packages/screensavers/WebView"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_services_Mms" path="packages/services/Mms"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_services_Telecomm" path="packages/services/Telecomm"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_services_Telephony" path="packages/services/Telephony"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_wallpapers_Basic" path="packages/wallpapers/Basic"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_wallpapers_Galaxy4" path="packages/wallpapers/Galaxy4"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_wallpapers_HoloSpiral" path="packages/wallpapers/HoloSpiral"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_wallpapers_MagicSmoke" path="packages/wallpapers/MagicSmoke"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_wallpapers_NoiseField" path="packages/wallpapers/NoiseField"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_wallpapers_PhaseBeam" path="packages/wallpapers/PhaseBeam"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_pdk" path="pdk"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_platform_testing" path="platform_testing"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_prebuilts_android-emulator" path="prebuilts/android-emulator"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,darwin" name="apq8016_prebuilts_clang_darwin-x86_host_3.6" path="prebuilts/clang/darwin-x86/host/3.6"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,linux" name="apq8016_prebuilts_clang_linux-x86_host_3.6" path="prebuilts/clang/linux-x86/host/3.6"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_prebuilts_devtools" path="prebuilts/devtools"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_prebuilts_eclipse" path="prebuilts/eclipse"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,darwin,arm" name="apq8016_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,darwin,arm" name="apq8016_prebuilts_gcc_darwin-x86_arm_arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,darwin,arm" name="apq8016_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,darwin" name="apq8016_prebuilts_gcc_darwin-x86_host_headers" path="prebuilts/gcc/darwin-x86/host/headers"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,darwin" name="apq8016_prebuilts_gcc_darwin-x86_host_i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,darwin,mips" name="apq8016_prebuilts_gcc_darwin-x86_mips_mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,darwin,x86" name="apq8016_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,linux,arm" name="apq8016_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,linux,arm" name="apq8016_prebuilts_gcc_linux-x86_arm_arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,linux,arm" name="apq8016_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,linux" name="apq8016_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,linux" name="apq8016_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,linux,mips" name="apq8016_prebuilts_gcc_linux-x86_mips_mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,linux,x86" name="apq8016_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_prebuilts_gradle-plugin" path="prebuilts/gradle-plugin"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_prebuilts_libs_libedit" path="prebuilts/libs/libedit"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_prebuilts_maven_repo_android" path="prebuilts/maven_repo/android"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_prebuilts_misc" path="prebuilts/misc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_prebuilts_ndk" path="prebuilts/ndk"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="darwin,pdk,pdk-cw-fs" name="apq8016_prebuilts_python_darwin-x86_2.7.5" path="prebuilts/python/darwin-x86/2.7.5"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="linux,pdk,pdk-cw-fs" name="apq8016_prebuilts_python_linux-x86_2.7.5" path="prebuilts/python/linux-x86/2.7.5"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_prebuilts_qemu-kernel" path="prebuilts/qemu-kernel"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_prebuilts_sdk" path="prebuilts/sdk"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk,tools" name="apq8016_prebuilts_tools" path="prebuilts/tools"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_sdk" path="sdk"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_system_bt" path="system/bt"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_system_core" path="system/core"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_system_extras" path="system/extras"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_system_gatekeeper" path="system/gatekeeper"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_system_keymaster" path="system/keymaster"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_system_media" path="system/media"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_system_netd" path="system/netd"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_system_qcom" path="vendor/qcom/opensource/softap"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_system_security" path="system/security"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="pdk" name="apq8016_system_vold" path="system/vold"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_codeaurora_telephony" path="vendor/codeaurora/telephony"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_nxp_opensource_external_libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_nxp_opensource_frameworks" path="vendor/nxp/opensource/frameworks"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_nxp_opensource_packages_apps_Nfc" path="vendor/nxp/opensource/packages/apps/Nfc"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" groups="qcom" name="apq8016_vendor_qcom-opensource_bluetooth" path="vendor/qcom/opensource/bluetooth"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom-opensource_display-frameworks" path="vendor/qcom/opensource/display-frameworks"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom-opensource_kernel_kernel-tests" path="vendor/qcom/opensource/kernel-tests"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom-opensource_location" path="vendor/qcom/opensource/location"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom-opensource_rcs-service" path="vendor/qcom/opensource/rcs-service"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom-opensource_time-services" path="vendor/qcom/opensource/time-services"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom-opensource_wlan_prima" path="vendor/qcom/opensource/wlan/prima"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_ferrum" path="device/qcom/msm8909"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_ferrum_512" path="device/qcom/msm8909_512"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_ferrum_LMT" path="device/qcom/msm8909_LMT"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_msm8909w" path="device/qcom/msm8909w"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_msm8916" path="device/qcom/msm8916"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_msm8916_32" path="device/qcom/msm8916_32"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_msm8916_32_512" path="device/qcom/msm8916_32_512"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_msm8916_32_LMT" path="device/qcom/msm8916_32_LMT"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_msm8916_32_k64" path="device/qcom/msm8916_32_k64"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_msm8916_64" path="device/qcom/msm8916_64"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_msm8916_64_LMT" path="device/qcom/msm8916_64_LMT"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_plutonium" path="device/qcom/msm8994"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+</manifest>
