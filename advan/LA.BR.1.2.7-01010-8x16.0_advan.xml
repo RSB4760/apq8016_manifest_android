@@ -458,4 +458,5 @@
   <project remote="advantech-github" name="apq8016_vendor_qcom_msm8916_64" path="device/qcom/msm8916_64"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_vendor_qcom_msm8916_64_LMT" path="device/qcom/msm8916_64_LMT"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_vendor_qcom_plutonium" path="device/qcom/msm8994"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_vendor_qcom_proprietary" path="vendor/qcom/proprietary"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
 </manifest>
