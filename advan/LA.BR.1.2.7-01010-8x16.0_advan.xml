@@ -116,6 +116,7 @@
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_hamcrest" path="external/hamcrest"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs,qcom_msm8x26" name="apq8016_external_harfbuzz_ng" path="external/harfbuzz_ng"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_external_hyphenation-patterns" path="external/hyphenation-patterns"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_i2ctools" path="external/i2ctools"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk" name="apq8016_external_icu" path="external/icu"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk" name="apq8016_external_iproute2" path="external/iproute2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_ipsec-tools" path="external/ipsec-tools"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
