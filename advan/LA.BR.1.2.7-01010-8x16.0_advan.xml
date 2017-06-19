@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/AdvantechRISC/" name="advantech-github"/>
+  <remote fetch="https://github.com/RSB4760/" name="advantech-github"/>
   <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_device_common" path="device/common" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
