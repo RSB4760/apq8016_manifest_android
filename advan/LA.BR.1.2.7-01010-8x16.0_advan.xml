@@ -327,6 +327,7 @@
   <project remote="advantech-github" name="apq8016_packages_apps_DeskClock" path="packages/apps/DeskClock"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_Dialer" path="packages/apps/Dialer"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_Email" path="packages/apps/Email"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Ethernet" path="packages/apps/Ethernet"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_Exchange" path="packages/apps/Exchange"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_FMRadio" path="packages/apps/FMRadio"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
