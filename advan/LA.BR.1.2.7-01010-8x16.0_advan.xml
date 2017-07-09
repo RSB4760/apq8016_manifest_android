@@ -193,6 +193,7 @@
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mockito" path="external/mockito"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mockwebserver" path="external/mockwebserver"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mp4parser" path="external/mp4parser"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_external_mtd-utils" path="external/mtd-utils"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_mtpd" path="external/mtpd"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_external_nanohttpd" path="external/nanohttpd"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk" name="apq8016_external_nanopb-c" path="external/nanopb-c"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
