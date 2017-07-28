@@ -331,6 +331,7 @@
   <project remote="advantech-github" name="apq8016_packages_apps_Ethernet" path="packages/apps/Ethernet"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_Exchange" path="packages/apps/Exchange"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
+  <project remote="advantech-github" name="apq8016_packages_apps_Firefox" path="packages/apps/Firefox"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_FMRadio" path="packages/apps/FMRadio"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_Gallery" path="packages/apps/Gallery"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" name="apq8016_packages_apps_Gallery2" path="packages/apps/Gallery2"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
