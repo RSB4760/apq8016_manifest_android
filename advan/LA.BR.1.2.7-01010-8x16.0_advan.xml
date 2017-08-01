@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/RSB4760/" name="advantech-github"/>
-  <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
-  <default remote="caf" revision="LA.BR.1.2.7-01010-8x16_advan"/>
+<remote fetch="https://github.com/RSB4760/" name="advantech-github"/>
+  <default revision="refs/tags/advan_20170801_002"
+           remote="advantech-github"
+           sync-j="16" />
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_device_common" path="device/common" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_arm64" path="device/generic/arm64" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk" name="apq8016_device_generic_armv7-a-neon" path="device/generic/armv7-a-neon" upstream="LA.BR.1.2.7-01010-8x16_advan"/>
