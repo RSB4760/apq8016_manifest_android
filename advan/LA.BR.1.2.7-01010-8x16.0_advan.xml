@@ -237,7 +237,6 @@
   <project remote="advantech-github" groups="pdk" name="apq8016_external_squashfs-tools" path="external/squashfs-tools"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_srtp" path="external/srtp"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_strace" path="external/strace"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
-  <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_svox" path="external/svox"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_tagsoup" path="external/tagsoup"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk,pdk-cw-fs" name="apq8016_external_tcpdump" path="external/tcpdump"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
   <project remote="advantech-github" groups="pdk-cw-fs" name="apq8016_external_timezonepicker-support" path="external/timezonepicker-support"  upstream="LA.BR.1.2.7-01010-8x16_advan"/>
